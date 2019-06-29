@@ -1,4 +1,7 @@
-# Setup the user account
+# Minecraft @ Raspberry PI
+Learn how to setup a minecraft server on the raspberry pi.
+
+## Setup the user account
 
 First we need to create the minecraft user account.
 This is done for security reasons.. i.e.: if our minecraft server
@@ -13,11 +16,11 @@ Now we can start a shell account as the new minecraft user to do the fun stuff:
 $ sudo -u minecraft /bin/bash
 ```
 
-# Minecraft Server
+## Minecraft Server
 
 Setting up our minecraft server takes a couple of steps...
 
-## Download Spigot Build Tools
+### Download Spigot Build Tools
 
 Before we can build our minecraft server let's download the latest spigot build tools which does this for us auto-magically:
 
@@ -25,27 +28,27 @@ Before we can build our minecraft server let's download the latest spigot build 
 $ wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 ```
 
-## Build the Minecraft Server
+### Build the Minecraft Server
 
 ```
 $ java -jar BuildTools.jar
 ```
 
-## Accept the EULA
+### Accept the EULA
 Open the file `eula.txt` in a text editor so we can change "False" to "True":
 
 ```
 $ nano eula.txt
 ```
 
-## Start the Minecraft Server
+### Start the Minecraft Server
 
 ```
 java -Xms512M -Xmx1008M -jar spigot-*.jar nogui
 ```
 Our server should now be running and listening on port 25565.
 
-# Connecting to our Minecraft Server
+## Connecting to our Minecraft Server
 Now that we've setup minecraft and got it up and running we're ready to connect to the server from our windows machine(s).
 
 First we need to get the network address (ip) by running:
