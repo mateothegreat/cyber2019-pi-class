@@ -41,7 +41,6 @@ $ ./msfconsole
 [-] starting the Metasploit Framework console...-
 [-] ***
 
-
                  _---------.
              .' #######   ;."
   .---,.    ;@             @@`;   .---,..
