@@ -42,7 +42,7 @@ root blablabla
 Let's launch the metasploit command shell:
 
 ```bash
-$ ./msfconsole
+$ msfconsole
 
 [-] starting the Metasploit Framework console...-
 [-] ***
