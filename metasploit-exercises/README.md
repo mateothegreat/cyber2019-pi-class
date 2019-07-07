@@ -5,6 +5,12 @@
 Find raspberry pi's running on the network with port 22 (SSH) open:
 
 ```bash
+$ nmap -p 22 -oG - 192.168.1.0/24
+```
+
+Piping results to a file:
+
+```bash
 $ nmap -p 22 -oG - 192.168.1.0/24 | awk '/22\/open/ {print $2}' > live-hosts.txt
 ```
 
