@@ -5,7 +5,7 @@
 Find raspberry pi's running on the network with port 22 (SSH) open:
 
 ```bash
-$ nmap -Pn -p 22 192.168.0.0/24 -oX out.xml | grep "Nmap" | cut -d " " -f5 > live-hosts.txt
+$ nmap -Pn -p 22 192.168.1.0/24 -oX out.xml | grep "Nmap" | cut -d " " -f5 > live-hosts.txt
 ```
 
 ## The Brute Force Password Attack
