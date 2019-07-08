@@ -23,7 +23,7 @@ We will use a brute force password attack against the targets we found in the pr
 Viewing our list of passwords that comes with metasploit:
 
 ```bash
-$ head /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
+$ cat /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 
 root
 root !root
