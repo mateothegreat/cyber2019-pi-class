@@ -83,7 +83,7 @@ If you're successful you will see the output above. Now grab this ip address and
 
 ## Find The Flag
 
-There is a file named "cyber2019flag.txt" somewhere on the file system. Use the `find` command to locate this file on the file system and then grap the secret code inside and be the first to write it on the dry erase board up front!
+There is a file named "cyber2019flag.txt" somewhere on the file system. Use the find command to locate this file on the file system and then grap the secret code inside and be the first to write it on the dry erase board up front!
 
 Hint:
 
