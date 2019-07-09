@@ -34,7 +34,9 @@ Metasploit comes with hundreds of exploits that you can run against targets. In 
 
 Run the following command to load the "ssh_login" exploit:
 
-msf > `use auxiliary/scanner/ssh/ssh_login`
+```bash
+use auxiliary/scanner/ssh/ssh_login
+```
 
 ### Configuring The Attack
 
@@ -69,11 +71,15 @@ run
 After the attack completes you will see "success" on a line that has a username and password that was used to successfuly login. You'll use this ip address, username and password later below.
 
 Now exit the metasploit shell:
-`exit -y`
+```bash
+exit -y
+```
 
 If you're successful you will see the output above. Now grab this ip address and login with it via ssh using the password matched:
 
-`ssh root@<the ip address here>`
+```bash
+ssh root@<the ip address here>
+```
 
 ## Find The Flag
 
