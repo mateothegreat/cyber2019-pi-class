@@ -60,6 +60,14 @@ Set the number of attacks that can run at one time so we can efficiently run the
 set THREADS 10
 ```
 
+### View Options
+
+To make sure the settings are applied from the previous three steps we will run the following command:
+
+```
+show options
+```
+
 ### Running The Attack
 
 Start the ssh_login attack with the following command:
