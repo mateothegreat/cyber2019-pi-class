@@ -2,7 +2,7 @@
 
 ## The Targets
 
-Find raspberry pi's running on the network with port 22 (SSH) open:
+Find your neighbors raspberry pi's running on the network with port 22 (SSH) open:
 
 ```
 nmap -p 22 --open 192.168.1.0/24
