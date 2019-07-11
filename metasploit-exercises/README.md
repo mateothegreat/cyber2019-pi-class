@@ -93,7 +93,7 @@ ssh root@paste the ip address here
 
 ## Find The Flag
 
-There is a file named "cyber2019flag.txt" somewhere on the file system. 
+There is a file named **cyber2019flag.txt** somewhere on the file system. 
 
 Use the find command to locate this file on the file system and then grap the secret code inside and be the first to write it on the dry erase board up front!
 
