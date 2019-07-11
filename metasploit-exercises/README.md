@@ -85,8 +85,10 @@ exit -y
 
 If you're successful you will see the output above. Now grab this ip address and login with it via ssh using the password matched:
 
+**(Take the ip address from the line returned from the run command with "success" and replace the text after @ below)
+
 ```
-ssh root@the ip address here
+ssh root@paste the ip address here
 ```
 
 ## Find The Flag
