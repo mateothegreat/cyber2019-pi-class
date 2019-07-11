@@ -76,9 +76,10 @@ Start the ssh_login attack with the following command:
 run
 ```
 
-After the attack completes you will see "success" on a line that has a username and password that was used to successfuly login. You'll use this ip address, username and password later below.
+After the attack completes you will see "**success**" on a line that has a username and password that was used to successfuly login. You'll use this **ip address, username and password** later below.
 
 Now exit the metasploit shell:
+
 ```
 exit -y
 ```
