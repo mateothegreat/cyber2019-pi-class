@@ -45,7 +45,7 @@ We need to configure our ssh_login attack with a few settings...
 Set the target ip address range that we will attack with:
 
 ```
-set RHOSTS 192.168.1.1-10
+set RHOSTS 192.168.1.10
 ```
 
 Set the path to the username and password list with:
